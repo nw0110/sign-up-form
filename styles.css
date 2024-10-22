@@ -152,6 +152,10 @@ input:invalid {
 .icon-footer {
     padding: 15px;
     font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon-footer a {
@@ -231,7 +235,7 @@ form button:hover {
 
 form button:active {
     background-color: rgb(143, 20, 24);
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 button+p {
