@@ -93,9 +93,21 @@ body {
 }
 
 input {
-    border-color: #E5E7EB;
-    border-width: 1px;
-    border-radius: 2px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+input:focus {
+    border: 1px solid blue;
+    outline: none;
+    box-shadow: 2px 5px 3px -5px #888888;
+}
+
+input:invalid {
+    border: 1px solid red;
+    outline: none;
+    box-shadow: 2px 5px 3px -5px #888888;
 }
 
 .left {
@@ -111,8 +123,8 @@ input {
 }
 
 .banner-icon {
-    background-image: url('planet-spain.png');
-    background-size: 30px 30px;
+    background-image: url('spanish_flag.png');
+    background-size: 40px 40px;
     background-repeat: no-repeat;
     background-position: center;
     width: 41px;
@@ -134,7 +146,7 @@ input {
 }
 
 .banner-heading {
-    height: 35px;
+    height: 38px;
 }
 
 .icon-footer {
@@ -167,6 +179,11 @@ input {
     font-size: 1.5rem;
 }
 
+h2 {
+    background-color: #AA151B;
+    color: #F1BF00;
+}
+
 .right>p+p {
     margin-top: 20px;
 }
@@ -193,6 +210,7 @@ section.inputs {
     border-bottom: 1px solid #E5E7EB;
     box-shadow: 0px 10px 10px -15px #888888;
     padding-bottom: 20px;
+    font-size: 0.95rem;
 }
 
 form button {
@@ -204,6 +222,16 @@ form button {
     cursor: pointer;
     border: none;
     outline: none;
+    box-shadow: 0px 10px 10px -15px #888888;;
+}
+
+form button:hover {
+    background-color: rgba(143, 20, 24, 0.726);
+}
+
+form button:active {
+    background-color: rgb(143, 20, 24);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 button+p {
